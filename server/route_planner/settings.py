@@ -162,8 +162,8 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-# ACCOUNT_USER_MODEL_USERNAME_FIELD = 'username'
-# AUTH_USER_MODEL = 'accounts.User'
+ACCOUNT_USER_MODEL_USERNAME_FIELD = 'username'
+AUTH_USER_MODEL = 'accounts.User'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
@@ -179,7 +179,7 @@ JWT_AUTH = {
     'JWT_RESPONSE_PAYLOAD_HANDLER': 'rest_framework_jwt.utils.jwt_response_payload_handler',
 
     'JWT_SECRET_KEY': SECRET_KEY,
-    # 'JWT_GET_USER_SECRET_KEY': 'app.accounts.models.jwt_get_secret_key',
+    'JWT_GET_USER_SECRET_KEY': 'app.accounts.models.jwt_get_secret_key',
     'JWT_PUBLIC_KEY': None,
     'JWT_PRIVATE_KEY': None,
     'JWT_ALGORITHM': 'HS256',
