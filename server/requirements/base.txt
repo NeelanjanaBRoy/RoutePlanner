@@ -1,0 +1,9 @@
+django==2.2
+djangorestframework
+psycopg2-binary
+gunicorn
+uuid
+django-cors-headers
+djangorestframework-jwt
+redis
+celery
