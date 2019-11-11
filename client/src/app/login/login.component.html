@@ -1,1 +1,39 @@
-<p>login works!</p>
+
+<div class="bg">
+    <!-- <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+      <ng-template ngbSlide *ngFor="let image of images">
+        <img [src]="image.url" alt="Image" >
+      </ng-template>
+    </ngb-carousel> -->
+    <div class="login-div" >
+      <mat-card class="centeredContainer col-lg-6 col-md-6 col-sm-8 col-xs-10 mat-elevation-z10 login-mat-card">
+        <div class="login-header">
+          <div class="login-header-1"><span>LOGIN TO ROUTE PLANNER</span></div>
+          <div class="login-header-2"><span>Login or signup to start planning your journey</span></div>
+        </div>
+        <div class="email-div">
+            <input type="email" class="form-control input fontAwesome" id="email" (focus)="errorColor=false" placeholder="Email Address / Username" [(ngModel)]="email" autocomplete="new-email">
+        </div>
+        <div class="line"></div>
+        <div class="password-div form-group">
+          <input type="password" id="password-field" class="form-control input fontAwesome password-toggle" placeholder="Your Password" [(ngModel)]="password"  autocomplete="new-password" passwordToggle required>
+          <div class="errMsg">
+                <!-- <mat-hint [ngClass]="{'errorColor': errorColor == true }">{{errorMsg}}</mat-hint> -->
+          </div>
+        </div> 
+        <div class="login-btn-div">
+          <button class="cButton login-btn" (click)="goToDashboard();" >
+            <span>LOGIN NOW</span>
+          </button>
+        </div>
+        <div class="register-div" style="visibility: collapse;">
+          <span>New User? Register Now</span>
+        </div>
+      </mat-card>
+    </div> 
+    <div class="bottom-copyright-div">
+        <span>Copyright &copy; 2019 Neelanjana Basu Roy.</span>
+    </div>
+  </div>
+  
+  

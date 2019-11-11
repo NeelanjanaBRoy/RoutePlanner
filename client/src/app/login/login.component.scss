@@ -1,0 +1,305 @@
+
+.fontAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif !important;
+  }
+
+.bg{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    font-family:  "OpenSans-Bold" !important;
+    // font-family: 'Source Sans Pro', sans-serif !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.login-div{
+    width: 400px;
+    height: 300px;
+}
+.login-mat-card{
+    width: 400px;
+    height: 315px;
+    display: block;
+    margin-left:-13em;
+    margin-right:auto; 
+    margin-top: -10em;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    background-color: #000000;
+    opacity:0.8;
+}
+.login-header{
+    color:#ffffff;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;  
+    text-align: center;
+    width: 340px;
+}
+.login-header-1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top:20px;
+    font-family:  "OpenSans-Bold" !important;
+    
+}
+.login-header-2{
+    font-size:12px;
+}
+
+
+.email-div{
+    position: relative;
+    display: block;
+    top: 5%;
+    left: 2%;
+    user-select: none;
+    .input{
+        width:320px;
+        height: 45px;
+        margin-left:auto;
+        margin-right:auto;   
+        color:#919397;
+        opacity:1;
+        border-radius: 0px;
+        border-bottom: none !important;
+        user-select: none;
+        outline-style:none;
+        box-shadow:none;
+        border-color:transparent;
+
+    }
+}
+
+.password-div{
+    position: relative;
+    display: block;
+    top: 4%;
+    left: -2.9%;    
+    user-select: none;    
+    .input{
+        width:320px;
+        height: 45px;
+        margin-left:42px;
+        margin-right:auto; 
+        color:#919397;
+        border-radius: 0px;
+        user-select: none;
+        outline-style:none;
+        box-shadow:none;
+        border-color:transparent;
+    }
+}
+
+.login-btn-div{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    left: 2%; 
+}
+.login-btn{
+    width:320px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #5E96FE;
+    border: none; 
+    color: white;
+    font-weight: 700;
+    opacity: 1 !important;
+}
+.register-div{
+    display: block;
+    position: relative;
+    top: 12%;
+    width: 340px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.bottom-copyright-div{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+*:focus {
+    outline: 0;
+    outline: none;
+}
+
+.errMsg{
+    width:80%;
+    margin:0 auto;
+    padding-top: 2%;
+  }
+
+.errorColor{
+    color: #df472f;
+    padding-left: 25%;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+  }
+
+  ::ng-deep .fa-eye{
+      right: 18px !important;
+  }
+
+  ::ng-deep .fa-eye-slash{
+    right: 18px !important;
+}
+
+::ng-deep .toggle-password{
+    right: 18px !important;
+}
+
+.password-toggle{
+    right: 18px !important;
+}
+  #email{
+      border: none;
+      padding-left: 0.5vw;
+      user-select: none;
+    //   background-image:url('../../assets/icons/mail-icon.png');
+      background-repeat:no-repeat;
+      background-position:5% 50%;  
+      padding-left:38px;
+  }
+
+  #password-field{
+      border: none;
+      padding-left: 0.5vw;
+      user-select: none;
+    //   background-image:url('../../assets/icons/password-icon.png');
+      background-repeat:no-repeat;
+      background-position:5% 50%;  
+      padding-left:38px;
+  }
+
+  .line{
+    width: 290px;
+    height: 5px;
+    border-bottom: 2px solid #DFDFE1;
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 9px;
+    z-index: 1;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #6096FF;
+    color: white;
+  }
+  #modal-basic-title{
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    font-weight: 500;
+  }
+  
+  .modal-content{
+      width: 700px;
+  }
+  .modal-dialog{
+    margin-top: 180px;
+  }
+  
+::ng-deep .modal.show .modal-dialog{
+margin-top: 300px !important;
+}
+
+//media queries 
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
