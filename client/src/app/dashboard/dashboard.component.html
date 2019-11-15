@@ -1,1 +1,40 @@
-<p>dashboard works!</p>
+<div class="page">
+
+    <div class="header">
+        <div class="row header">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 " style="padding-left: 0px !important;">
+                <div class="logo">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 tab-links">
+                <nav mat-tab-nav-bar class="tabs">
+                    <div *ngFor="let screen of screenData; let i = index;">
+                        <a class="tab" [routerLink]="[screen.headerURL]" id="screen.screen_name"
+                            (click)="highlightTab(i)"
+                            [ngClass]="{'highlight': (i == selectedIndex && this.refresh == false),  'active': (i == 0 && url == 'view' && refreshIndex == null) , 'refreshActive' : (i == refreshIndex && this.refresh == true) }">
+                            {{screen.screen_name.toUpperCase()}} </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 profile-pic-div">
+                <div ngbDropdown class="d-inline-block">
+                    <div id="dropdownBasic1" ngbDropdownToggle style="padding: 0px; margin: 0px;">
+                        <!-- <div [innerHTML]="initials" alt="Avatar" class="profile-picture"
+                            matTooltip="{{userName | uppercase}}" matTooltipPosition="above">
+                        </div> -->
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem (click)="logout()">LOGOUT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="display">
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+</div>

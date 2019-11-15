@@ -10,7 +10,8 @@ import {
   MatSelectModule,
   MatSidenavModule,
   MatCardModule,
-  MatTableModule
+  MatTableModule,
+  MatTooltipModule
 } from "@angular/material";
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -44,6 +45,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatSidenavModule,
     MatCardModule,
     MatTableModule,
+    MatTooltipModule,
     HttpClientModule,
     HttpModule
   ],
