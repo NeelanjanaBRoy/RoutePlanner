@@ -1,1 +1,37 @@
-<p>journey works!</p>
+<div class="journey-page">
+    <div class="source">
+        <input class="sourceText" placeholder="Enter your source here" [(ngModel)]="source">
+    </div>
+    <div class="destination">
+        <input class="destinationText" placeholder="Enter your destination here" [(ngModel)]="destination">
+    </div>
+    <div class="search">
+        <button class=search-btn (click)="getJourneys()">SEARCH</button>
+    </div>
+    <div class="show-route-div">
+        <div *ngIf="sourceDisambiguation != undefined">
+            <p> Could not find your Source. Did you mean any of these?</p>
+            <div class="custom-control custom-radio" *ngFor="let source of sourceDisambiguation">
+                <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios"
+                    mdbInput (change)="onSourceChange($event)" value="{{source.place.commonName}}">
+                <label class="custom-control-label" for="defaultUnchecked" >{{source.place.commonName}}</label>
+            </div>
+        </div>
+        <div *ngIf="destinationDisambiguation != undefined">
+            <p> Could not find your Destination. Did you mean any of these?</p>
+            <div class="custom-control custom-radio" *ngFor="let dest of destinationDisambiguation">
+                <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios"
+                        mdbInput (change)="onDestinationChange($event)" value="{{dest.place.commonName}}">
+                <label class="custom-control-label" for="defaultUnchecked">{{dest.place.commonName}}</label>
+            </div>
+        </div>
+    </div>
+    <!-- <div *ngIf="routeDetails">
+        <div *ngFor="let route of routeDetails; let i=index">
+            <p>Arrival Date and TIme: {{route.arrivalDateTime}}</p>
+            <p>Duration of Journey: {{route.duration}}</p> -->
+            <!-- <p>Total Fare: {{route.totalFare}}</p> -->
+        <!-- </div>
+    </div> -->
+
+</div>
